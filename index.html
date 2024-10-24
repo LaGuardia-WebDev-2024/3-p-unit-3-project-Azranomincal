@@ -14,47 +14,190 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Project: Recipe book</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-color: rgb(245, 245, 247);
+      }
+      h1 {
+        color: rgb(112, 92, 83);
+      }
+      h3 {
+        color: rgb(156, 62, 31);
+      }
 
-<head>
-  <title>Project: Recipe book</title>
-  <meta charset="utf-8">
-  <style>
-  </style>
-</head>
+      td {
+        border-style: double;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
+    <h1>Ratatoullie's Tasty Meals</h1>
+    <img src="data:image/jpeg;base64,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">
 
-  <h1>____'s Recipe Book</h1>
+    <h2>Menu :</h2>
 
-  <h2>Contents:</h2>
+    <ol>
+      <li>
+        <a href="#cajun">Cajun Chicken Alfredo</a>
+      </li>
+      <li><a href="#strip-steak"> NY Strip Steak, Mac n Cheese</a></li>
+  
+    </ol>
 
-  <ol>
-    <li><a href="?">Recipe #1</a></li>
-  </ol>
+    <h3 id="cajun">
+      <a
+        href="https://www.thecookingguy.com/recipes/creamy-cajun-pastaCajun Pasta"
+      >
+        Cajun Chicken Alfredo</a
+      >
+    </h3>
+    <img
+      src="https://vikalinka.com/wp-content/uploads/2021/10/Cajun-Chicken-Alfredo-5-Edit.jpg"
+      width="245"
+      height="169"
+    />
 
-  <h2 id="?">Recipe #1</h2>
+    <ul>
+      <li>Time: 30 minutes</li>
+    </ul>
 
-  <ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-  </ul>
+    <table>
+      <thead>
+        <tr>
+          <th>Meal</th>
+          <th>Ingredients</th>
+          <th>Utensils</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cajun Chicken Alfredo</td>
+          <td>
+            <ul>
+              <li>Noodles</li>
+              <li>Garlic, Paprika,Tony's seaasoning, Old bay</li>
+              <li>Shredded Mozeralla cheese</li>
+              <li>Chicken breast</li>
+              <li>Heavy whipping cream</li>
+            </ul>
+          </td>
+          <td>
+            - Pot <br />
+            - A Cullender<br />
+            -A large spoon<br />
+            -A whisk
+          </td>
+        </tr>
+        <tr>
+          <td>Step#1</td>
+          <td>
+            Grab your pot and fill it with 2 cups of water and then put it on
+            you stove at medium heat. Add salt and oil to the water. When it
+            gets to a boil. add your choice of noodles
+          </td>
+          <td>Pot,spoon.</td>
+        </tr>
+        <tr>
+          <td>Step #2</td>
+          <td>
+            Take a large pan and add the heavy whipping cram, season liquid to
+            your liking. Once mixture begins to bubble, mix with whisk until
+            thick at low heat.
+          </td>
+          <td>Pan, spoon, whisk</td>
+        </tr>
+        <tr>
+          <td>Step #3</td>
+          <td>
+            Strain noodles once fully cooked or cooked to your liking, and then
+            add the noodles to the pan of heavy cream
+          </td>
+          <td>Cullender</td>
+        </tr>
+        <tr>
+        <td> Step #4 </td>
+        <td> Add two handfuls of cheese :P </td>
+        <td> Nothing </td>
+        </tr>
+      </tbody>
+    </table>
+<p>
+  Click<a href="https://youtu.be/dQw4w9WgXcQ" > here to pay for the rest!</a>
+    </p>
+    
+    <h4 id="strip-steak">
+      <a href="https://pinchofyum.com/steak-mac-and-cheese">
+        Ny Strip Steak, Mac n Cheese</a
+      >
+    </h4>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Ingredients</th>
-        <th>Quantity</th>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
+    <img
+      src="https://www.eatthis.com/wp-content/uploads/sites/4/2024/01/outback-steakhouse-mac-cheese.jpeg?quality=82&strip=all&w=640"
+      width="245"
+      height="169"
+    />
 
-  <p><strong>Step 1:</strong> Do something.
-  </p>
+    <ul>
+      <li>Time: 1 hour.</li>
+    </ul>
 
-  <p><em>Source: <a href="?">Some recipes websites</a></em></p>
-
-</body>
-
+    <table>
+      <thead>
+        <tr>
+          <th>Meal</th>
+          <th>Ingredients</th>
+          <th>Utensils</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ny Strip Steak n Mac n Cheese</td>
+          <td>
+            <ul>
+              <li>Elbow Noodles</li>
+              <li>
+               Carnation milk, flour, 1 egg, Cheddar cheese, gouda, Extra Sharp Cheddar and Marble Cheese.
+              </li>
+              <li>New York strip steak</li>
+              <li>Minced Garlic, Pepper, Ground Garlic and Onion, Laury's seasoning salt, All Seasoning. </li>
+          
+            </ul>
+          </td>
+          <td> -Oven<br>-Pot<br>-Gratter<br> </td>
+        </tr>
+        <tr>
+        <td> Step #1</td>
+        <td> Preheat oven to 350. Take a bowl and then add a mixture of cold water and apple cider vinegar. Place your steaks in that mixture for three minutes and then rinse it off.  </td>
+          <td>Bowl  </td>
+        </tr>
+        <tr>
+          <td>  Step #2</td>
+          <td> Once the steak is cleaned, season both sides and massage the seasoning in to your liking and place it in a pan with 2 table spoons of butter,put it in the oven for 45 minutes  </td>
+          <td> Pan  </td>
+        
+        </tr>
+        <tr>
+        <td> Step #3</td>
+        <td> Grab a pot and put water on to boil mixed with salt and oil. While waiting for that to boil, shred all of the cheese. Once the water comes to a boil, add 2 boxes of elbow noodles</td>
+        <td> Gratter, Pot , Bowl</td>
+        </tr>
+        
+      </tbody>
+    </table>
+    <p>
+      Click<a href="https://youtu.be/dQw4w9WgXcQ" > here to pay for the rest!</a>
+    </p>
+    <p>
+      <em
+        >Source:
+        <a href="https://www.howtocook.recipes/homemade-ratatouille-recipe/"
+          >Some recipes websites</a
+        ></em
+      >
+    </p>
+  </body>
 </html>
